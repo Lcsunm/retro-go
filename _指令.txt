@@ -1,0 +1,5 @@
+编译指令
+py ./rg_tool.py build-img --target=c19 --no-networking
+
+烧录指令（Win系统，仅供参考）
+esptool.py -p COM3 -b 921600 write_flash --flash_size detect 0x0 .\retro-go_1.43-dirty_c19.img
